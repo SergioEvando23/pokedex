@@ -3,7 +3,7 @@
 function App() {
   return (
     <div>
-      <h1> listar </h1> 
+      <h1> OTIMO O APP TA PEGANDO  </h1> 
     </div>
   );
 }
