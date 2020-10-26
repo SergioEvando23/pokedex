@@ -1,13 +1,13 @@
 ## ToDo List
 
-[ ] IDENTIFICAR O CONTRATO DA API - feito no insomnia onde separei meus recursos que serão ultilizados.
+- [ ] IDENTIFICAR O CONTRATO DA API - feito no insomnia onde separei meus recursos que serão ultilizados.
 
-[ ] CRIAR MOCKS - criar arquivos de pokemons ( importante lembra de citar em amplitude ).
+- [ ] CRIAR MOCKS - criar arquivos de pokemons ( importante lembra de citar em amplitude ).
                   criar arquivos de todos os componentes citados no contrato da API.
 
-[ ] EXIBIR INFORMAÇÕES EM CARDS - 
+- [ ] EXIBIR INFORMAÇÕES EM CARDS - 
 
-[ ] FORMATAR TELA 
+- [ ] FORMATAR TELA 
 
-[ ] INTEGRAR COM A API
+- [ ] INTEGRAR COM A API
 
