@@ -1,7 +1,7 @@
 import React from 'react'
 import pokemonLists from '../../__mocks__/pokemonLists'
 import PokemonCard from './components/PokemonCard/PokemonCard'
-
+import './ListScreen.css'
 
 const ListScreen = () => {
     //console.log(pokemonLists.results)
@@ -10,9 +10,11 @@ const ListScreen = () => {
        console.log(pokemon.name);
         
         return (
-            <PokemonCard nome={pokemon.name}></PokemonCard>
+            <div className="Card"> 
+                <PokemonCard nome={pokemon.name}></PokemonCard>
+            </div>
         )
-    })
+    });
 
     return ( 
         <div> 
