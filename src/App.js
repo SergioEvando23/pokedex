@@ -3,6 +3,7 @@ import pokemon from './__mocks__/pokemon'
 import ListScreen from './pages/ListScreen/ListScreen'
 import './App.css'
 import Button from  '@material-ui/core/Button'
+import Switch from '@material-ui/core/Switch';
 
 const App = () => {   
   //  console.log(pokemon)
@@ -10,6 +11,7 @@ const App = () => {
     return (
         <div>
           <div className="header"> 
+            
             <div className="img">
               <img src="Logo-Pokebola-Pokémon-PNG-1200x1200.png" width="50" height="50" margin="0"></img>
             </div>
@@ -19,6 +21,9 @@ const App = () => {
             </div>
           </div>
           <div className="items">
+            <div className="onoff"> 
+              <Switch defaultChecked color="default" inputProps={{ 'aria-label': 'checkbox with default color' }}/>
+            </div> 
             <ListScreen/>
           </div>
         </div>
