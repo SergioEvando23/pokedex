@@ -11,7 +11,7 @@ const ListScreen = () => {
         
         return (
             <div className="Card"> 
-                <PokemonCard nome={pokemon.name}></PokemonCard>
+               <ul> <PokemonCard nome={pokemon.name}></PokemonCard></ul>
             </div>
         )
     });
