@@ -1,4 +1,10 @@
 .Card {
-    display: flex;
-
+    table-layout: inherit ;
+    width: 200px;
+    padding: 110px 0px;
+    border-radius: 20px;
+    border: 3px solid #000;
+    margin: 25px;
+    display: inline-block;
+    list-style-type: "→";
 }

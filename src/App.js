@@ -10,16 +10,17 @@ const App = () => {
     return (
         <div>
           <div className="header"> 
-            <img src="Logo-Pokebola-Pokémon-PNG-1200x1200.png" width="50" height="50" margin="0"></img>
-              <div className="button">
-                <Button size="small"  color="secundary">Geração</Button>
-                <Button size="small"  color="secundary">Modo Escuro</Button>
-              </div>
+            <div className="img">
+              <img src="Logo-Pokebola-Pokémon-PNG-1200x1200.png" width="50" height="50" margin="0"></img>
+            </div>
+            <div className="button">
+              <b> <Button size="small"  color="secundary">Geração</Button></b>
+              <b> <Button size="small"  color="secundary">Modo Escuro</Button></b>
+            </div>
           </div>
           <div className="items">
             <ListScreen/>
           </div>
-          
         </div>
     )
 }
