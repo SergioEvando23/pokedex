@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    background-color: #333332;
+    background-color: #2e2e2c;
     margin-top: 60px;
     }
 
@@ -17,29 +17,26 @@ body {
     margin: -60px -5px -5px -10px;
     padding: 2px;
 }
- .img {
+
+.img {
      margin: 0px 0px 0px 25px;
  }
 
- .button {
+.button {
     display: inline-block;
     margin: auto;
     position: relative;
     padding-left: 70%;
  }
 
- .onoff {
-    
+.onoff {
     display: inline-block;
     position: relative;
     padding-left: 95%;
     padding-bottom: 0%;
     padding-top: -10%;
-   
  }
  
- .items {
-   
+.items {
     margin: 0px 0px 0px 25px;
-
  }

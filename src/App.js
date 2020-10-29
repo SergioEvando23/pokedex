@@ -11,7 +11,6 @@ const App = () => {
     return (
         <div>
           <div className="header"> 
-            
             <div className="img">
               <img src="Logo-Pokebola-Pokémon-PNG-1200x1200.png" width="50" height="50" margin="0"></img>
             </div>
@@ -24,8 +23,8 @@ const App = () => {
             <div className="onoff"> 
               <Switch defaultChecked color="default" inputProps={{ 'aria-label': 'checkbox with default color' }}/>
             </div> 
-            <ListScreen/>
-          </div>
+              <ListScreen/>
+            </div>
         </div>
     )
 }
