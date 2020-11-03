@@ -9,7 +9,7 @@ const ListScreen = () => {
        //console.log(pokemon);
         return (
             <div className="Card"> 
-                <ul> <PokemonCard nome={item.name}> </PokemonCard></ul>
+                <PokemonCard nome={item.name}></PokemonCard>
             </div>
         )
     });

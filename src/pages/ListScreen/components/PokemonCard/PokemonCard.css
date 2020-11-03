@@ -1,15 +1,16 @@
 .Pcard {
     border-radius: 30px;
     width: 200px;
-    padding: 60px 10px;
+    padding: 55px 10px;
     display: inline-block;
     margin: 3px 25px 25px 25px;
+    text-justify: auto;
 }
 
 .Nome {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 300;
-    margin: -40px 40px 30px 30px
-
+    margin: -40px 40px 30px 30px;
+    text-justify: auto;
 }
