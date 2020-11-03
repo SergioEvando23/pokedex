@@ -1,6 +1,7 @@
 import React from 'react'
 import pokemon from '../../../../__mocks__/pokemon'
 import './PokemonCard.css'
+import PokemonImage from '../PokemonImage/PokemonImage'
 
 const PokemonCard = ({nome}) => {
 
@@ -12,15 +13,16 @@ const PokemonCard = ({nome}) => {
             default: '#ba551a'
         };
         return colorTypes[type] || colorTypes ['default'];
-}   
-
+    }   
+   // console.log("types", pokemon.moves.length)
     return (
-        <div className="Pcard" style={{backgroundColor: defineColor(pokemon.type)}}>
+        <div className="Pcard" style={{backgroundColor: defineColor(pokemon?.types[0]?.type?.name)}}>
             <div className="Nome">
-               {nome}#N°
+               {nome}#{pokemon.order}
             </div>  
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" width="180" height="180" margin="0" ></img>
-         </div>
+            <PokemonImage sprite={pokemon.sprites.other['official-artwork'].front_default}/>
+        </div>
+         
     );
 };
 
