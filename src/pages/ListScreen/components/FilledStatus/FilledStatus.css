@@ -1,0 +1,32 @@
+#container {
+    position: relative;
+    width: 180px;
+    height: 1px;
+    padding: 1px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 25px 0px 0px 18px;
+}
+
+#container #body {
+    position: absolute;
+    border-radius: 5px;
+    width: 130px;
+    height: 15px;
+    background-color: white;
+    margin: 4px 20px -3px 33px;
+}
+#container #fill {
+    border-radius: 5px;
+    position: absolute;
+    width: 56px;
+    height: 11px;
+    background-color: #00FF00;
+    z-index: 999;
+    box-sizing: border-box;
+    margin: 6px 25px -8px 35px;
+}
+
+#container childrem {
+
+}
