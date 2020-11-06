@@ -1,19 +1,20 @@
 import React from 'react';
 import './FilledStatus.css'
 
-const FilldStatus = ({children}) => {
-    const element = document.getElementById('fill');
+const FilldStatus = ({ value, label}) => {
         
-    const setFilled = (value) => {
-        const finalWidth = (value / 130) * 100;
-        element.style.width = `${finalWidth}%` ;
+    const setFilled = (percentage) => {
+        const finalWidth = (percentage / 130) * 100;
+        return `${finalWidth}%` ;
     }
 
     return (
-        <div className="container">
-            <div className="body"></div>
-            <div className="fill"></div>
-            {children} 
+        <div style={{display: "flex", margin:"10px 0px -40px 20px"}}>
+            <p>{label}</p> 
+            <div className="container-filled-status">
+                <div className="body"></div>
+                <div className="fill" style={{width:setFilled(value)}}></div>  
+            </div>
         </div>
     );
 };

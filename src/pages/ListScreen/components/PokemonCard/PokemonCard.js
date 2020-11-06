@@ -30,10 +30,9 @@ const PokemonCard = ({nome}) => {
                {nome}#{pokemon?.order}
             </div>  
             <PokemonImage sprite={pokemon?.sprites?.other['official-artwork']?.front_default}/>
-            <Stamp type={pokemon?.types[0]?.type?.name} color={defaultColor}></Stamp>
-            <FilledStatus label="Atk" value={getCorrectProps("attack")}>Atk:</FilledStatus>
-            <FilledStatus label="Def" value={getCorrectProps("defense")}>Def:</FilledStatus>
-
+            <Stamp type={pokemon?.types[0]?.type?.name} color={defaultColor}/>
+            <FilledStatus label="Atk:" value={getCorrectProps("attack").base_stat}/>
+            <FilledStatus label="Def:" value={getCorrectProps("defense").base_stat}/>
         </div>
          
     );

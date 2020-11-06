@@ -1,0 +1,38 @@
+.container-detail-filled {
+    position: relative;
+    width: 180px;
+    height: 1px;
+    padding: 1px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 0px -20px 270px;
+  
+}
+
+.container-detail-filled .body {
+    position: absolute;
+    border-radius: 5px;
+    width: 300px;
+    height: 18px;
+    background-color: white;
+    margin: -38px 20px -3px 0px;
+}
+.container-detail-filled .fill {
+    border-radius: 5px;
+    position: absolute;
+    height: 14px;
+    background-color: #00FF00;
+    box-sizing: border-box;
+    margin: -36px 25px -8px 2px;
+}
+
+.Menu {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 500;
+    font-stretch: expanded;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: -10px;
+
+}

@@ -24,7 +24,7 @@ const App = () => {
               <Switch defaultChecked color="default" inputProps={{ 'aria-label': 'checkbox with default color' }}/>
             </div> 
             <div>
-                <DetailScreen /> 
+               <DetailScreen />
             </div>
           </div>
         </div>
