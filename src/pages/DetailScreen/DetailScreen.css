@@ -1,0 +1,10 @@
+.name {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: inherit;
+    font-weight: 900;
+    margin-left: 45%;
+    text-transform: capitalize ;
+    color: #ffffff;
+    
+}

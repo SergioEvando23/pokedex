@@ -10,10 +10,9 @@ const FilldStatus = ({children}) => {
     }
 
     return (
-        <div id="container">
-            
-            <div id="body"></div>
-            <div id="fill"></div>
+        <div className="container">
+            <div className="body"></div>
+            <div className="fill"></div>
             {children} 
         </div>
     );

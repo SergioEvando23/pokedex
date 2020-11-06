@@ -1,9 +1,9 @@
 import React from 'react'
-import pokemon from './__mocks__/pokemon'
 import ListScreen from './pages/ListScreen/ListScreen'
 import './App.css'
 import Button from  '@material-ui/core/Button'
 import Switch from '@material-ui/core/Switch';
+import DetailScreen from './pages/DetailScreen/DetailScreen'
 
 const App = () => {   
   //  console.log(pokemon)
@@ -23,8 +23,10 @@ const App = () => {
             <div className="onoff"> 
               <Switch defaultChecked color="default" inputProps={{ 'aria-label': 'checkbox with default color' }}/>
             </div> 
-              <ListScreen/>
+            <div>
+                <DetailScreen /> 
             </div>
+          </div>
         </div>
     )
 }

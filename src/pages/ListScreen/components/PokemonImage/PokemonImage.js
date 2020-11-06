@@ -5,7 +5,7 @@ const PokemonImage = ({sprite}) => {
 
     return (
         <div className="Balloncard">
-            <img src={sprite} width="150" height="150" margin="0" ></img>        
+            <img src={sprite} width="150" height="150" margin="40" ></img>        
             <div className="Ballonmine"></div>
         </div>
     );

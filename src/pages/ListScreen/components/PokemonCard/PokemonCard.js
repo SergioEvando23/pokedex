@@ -5,6 +5,8 @@ import PokemonImage from '../PokemonImage/PokemonImage'
 import Stamp from './../Stamp/Stamp'
 import FilledStatus from './../FilledStatus/FilledStatus'
 
+
+
 const PokemonCard = ({nome}) => {
     const defineColor = type => {   
         const colorTypes = {
@@ -15,8 +17,6 @@ const PokemonCard = ({nome}) => {
         };
         return colorTypes[type] || colorTypes ['default'];
     }   
-   
-   console.log(console.log(pokemon?.stats))
 
     const defaultColor = defineColor(pokemon?.types[0]?.type?.name);
 
@@ -27,9 +27,9 @@ const PokemonCard = ({nome}) => {
     return (
         <div className="Pcard" style={{backgroundColor: defaultColor}}>
             <div className="Nome" style={{textAlign:'center' }}>
-               {nome}#{pokemon.order}
+               {nome}#{pokemon?.order}
             </div>  
-            <PokemonImage sprite={pokemon.sprites.other['official-artwork'].front_default}/>
+            <PokemonImage sprite={pokemon?.sprites?.other['official-artwork']?.front_default}/>
             <Stamp type={pokemon?.types[0]?.type?.name} color={defaultColor}></Stamp>
             <FilledStatus label="Atk" value={getCorrectProps("attack")}>Atk:</FilledStatus>
             <FilledStatus label="Def" value={getCorrectProps("defense")}>Def:</FilledStatus>
