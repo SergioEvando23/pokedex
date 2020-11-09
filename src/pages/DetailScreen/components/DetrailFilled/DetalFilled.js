@@ -15,7 +15,9 @@ const DetailFilled = ({label, value }) => {
             </div>
             <div className="container-detail-filled" >
                 <div className="body"></div>
-                <div className="fill" style={{width:setFilled(value)}}></div>
+                <div className="fill" style={{width:setFilled(value)}}>
+                    <p className="number">{value}</p>
+                </div>
             </div>     
         </div>
         

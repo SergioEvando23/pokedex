@@ -5,6 +5,7 @@ import DetailImage from './components/DetailImage/DetailImage'
 import DetailFilled from './components/DetrailFilled/DetalFilled'
 import Button from '@material-ui/core/Button'
 
+
 const DetailScreen = props => {
 
     const getCorrectProps = (statName) => {
@@ -32,7 +33,7 @@ const DetailScreen = props => {
                     <DetailBox label="Peso:" value={pokemon?.weight}/>
                 </div> 
                 <div style={{margin:"-116px 0px 0px 200px"}}>
-                    <DetailBox label="Eu iria:" value={pokemon?.id}/> 
+                    <DetailBox label="Id:" value={pokemon?.id}/> 
                     <DetailBox label="Tipo:" value={pokemon?.types[0]?.type?.name}/> 
                 </div>
             </div>

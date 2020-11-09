@@ -5,7 +5,7 @@
     padding: 1px;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px 0px -20px 270px;
+    margin: 0px 0px -22px 270px;
   
 }
 
@@ -15,7 +15,7 @@
     width: 300px;
     height: 18px;
     background-color: white;
-    margin: -38px 20px -3px 0px;
+    margin: -50px 20px -3px 0px;
 }
 .container-detail-filled .fill {
     border-radius: 5px;
@@ -23,7 +23,7 @@
     height: 14px;
     background-color: #00FF00;
     box-sizing: border-box;
-    margin: -36px 25px -8px 2px;
+    margin: -48px 25px -8px 2px;
 }
 
 .Menu {
@@ -33,6 +33,14 @@
     font-stretch: expanded;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #FFFFFF;
-    margin-bottom: -10px;
+    margin-bottom: -1;
+}
 
+.number {
+    color: #FFFFFF ;
+    font-size: 0.80em;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-shadow: 3px #000000;
+    margin: 0px 0px 0px 2px;
 }
