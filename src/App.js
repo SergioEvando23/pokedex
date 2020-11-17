@@ -1,35 +1,46 @@
 import React from 'react'
 import ListScreen from './pages/ListScreen/ListScreen'
 import './App.css'
-import Button from  '@material-ui/core/Button'
-import Switch from '@material-ui/core/Switch';
+import { Button, CssBaseline } from  '@material-ui/core'
 import DetailScreen from './pages/DetailScreen/DetailScreen'
 import Error from './components/ErrorPage'
-import Link from 'react-router-dom'
-  
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom"; 
+
 const App = () => {   
 
   return (
-      
-    <div>
-      <div className="header"> 
-        <div className="img">
-          <img src="Logo-Pokebola-Pokémon-PNG-1200x1200.png" width="50" height="50" margin="0"></img>
+    <>
+    <CssBaseline />
+    <Router>
+      <div>
+        <div className="header"> 
+          <div className="img">
+            <img src="Logo-Pokebola-Pokémon-PNG-1200x1200.png" width="50" height="50" margin="0"></img>
+          </div>
+          <div className="button">
+            <b> <Button size="small"  color="secundary">Geração</Button></b>
+            <b> <Button size="small"  color="secundary">Modo Escuro</Button></b>
+          </div>
         </div>
-        <div className="button">
-          <b> <Button size="small"  color="secundary">Geração</Button></b>
-          <b> <Button size="small"  color="secundary">Modo Escuro</Button></b>
-        </div>
-      </div>
-      <div className="items">
-        <div className="onoff"> 
-          <Switch defaultChecked color="default" inputProps={{ 'aria-label': 'checkbox with default color' }}/>
-        </div> 
-        <div>
-          <DetailScreen />
-        </div>
-      </div>
-    </div> 
+
+        <Switch>
+          <Route path="/moreInfo">
+            <DetailScreen />
+          </Route>
+          <Route path="/error404">
+            <Error />
+          </Route>
+          <Route path="/">
+            <ListScreen/>
+          </Route>
+        </Switch>
+      </div> 
+    </Router>  
+    </>
   )
 }
 

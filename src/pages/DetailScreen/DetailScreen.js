@@ -1,10 +1,10 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import pokemon from './../../__mocks__/pokemon'
 import DetailBox from './components/DetailBox/DetailBox';
 import DetailImage from './components/DetailImage/DetailImage'
 import DetailFilled from './components/DetrailFilled/DetalFilled'
 import Button from '@material-ui/core/Button'
-
+import { Link } from 'react-router-dom'
 
 const DetailScreen = props => {
 
@@ -14,7 +14,7 @@ const DetailScreen = props => {
 
     return (
         <div>
-            <Button variant="outlined" color="secondary" style={{color:"#ffffff", padding:"5px"}}>VOLTAR</Button>
+            <Link to="/"><Button variant="outlined" color="secondary" style={{color:"#ffffff", padding:"5px"}}>VOLTAR</Button></Link>
             <DetailImage sprite={pokemon?.sprites?.other['official-artwork']?.front_default} />
             <div style={{fontFamily:"sans-serif", fontSize:"xx-large", fontWeight:"700", margin: "40px 0px -100px 698px", color: "#FFFFFF", textTransform:"capitalize"}}>
             {pokemon?.name}

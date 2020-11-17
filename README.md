@@ -9,5 +9,9 @@
 
 - [ ] FORMATAR TELA 
 
-- [ ] INTEGRAR COM A API
+- [x] INTEGRAR COM A API
 
+=========================
+
+- [ ] PASSAR ID DO ITEM NO URL 
+- [ ] PEGAR ID DO URL E CHAMAR A API

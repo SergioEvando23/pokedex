@@ -1,21 +1,19 @@
-body {
+div#root {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 300;
     background-color: #2e2e2c;
-    margin-top: 60px;
-    }
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 
 .header {
     display: flex;
-    position: absolute;
-    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
-    font-weight: 300;
-    font-size: 100%;
+    flex: 1;
     font-style: inherit;
-    background-color:#ED1C24;
-    width: 103%;    
-    display: flex;
-    margin: -60px -5px -5px -10px;
+    background-color:#ED1C24; 
     padding: 2px;
+    height: 48px;
 }
 
 .img {
