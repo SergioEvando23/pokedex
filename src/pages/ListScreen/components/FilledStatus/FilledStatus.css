@@ -11,10 +11,10 @@
 .container-filled-status .body {
     position: absolute;
     border-radius: 5px;
-    width: 130px;
+    width: 150px;
     height: 15px;
     background-color: white;
-    margin: 0px 20px 6px 0px;
+    margin: -2px 20px 6px 0px;
 }
 .container-filled-status .fill {
     border-radius: 5px;
@@ -22,5 +22,5 @@
     height: 11px;
     background-color: #00FF00;
     box-sizing: border-box;
-    margin: 2px 25px 1px 2px;
+    margin: 0px 25px 1px 2px;
 }

@@ -3,7 +3,7 @@ import ListScreen from './pages/ListScreen/ListScreen'
 import './App.css'
 import { Button, CssBaseline } from  '@material-ui/core'
 import DetailScreen from './pages/DetailScreen/DetailScreen'
-import Error from './components/ErrorPage'
+import ErrorPage from './components/ErrorPage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,15 +28,9 @@ const App = () => {
         </div>
 
         <Switch>
-          <Route path="/moreInfo">
-            <DetailScreen />
-          </Route>
-          <Route path="/error404">
-            <Error />
-          </Route>
-          <Route path="/">
-            <ListScreen/>
-          </Route>
+          <Route exact path="/" component={ListScreen}/>
+          <Route exact path="/pokemon/:id" component={DetailScreen}/> 
+          <Route path="*" component={ErrorPage}/>
         </Switch>
       </div> 
     </Router>  

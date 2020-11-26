@@ -24,6 +24,8 @@ const PokemonCard = ({nome, url}) => {
             grass:'#32CD32',
             fire: '#ff5555',
             water:'#4682B4',
+            bug:'#AD8F2F',
+            normal: '#808059',
             default: '#ba551a'
         };
         return colorTypes[type] || colorTypes ['default'];
@@ -37,7 +39,7 @@ const PokemonCard = ({nome, url}) => {
     
     return (
         <div className="Pcard" style={{backgroundColor: defaultColor}}>
-            <div className="Nome" style={{textAlign:'center' }}>
+            <div className="Nome" style={{textAlign:'center', textTransform: "capitalize"}}>
                {nome}#{pokemon?.order}
 
             </div>  
