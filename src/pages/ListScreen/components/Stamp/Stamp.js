@@ -3,7 +3,7 @@ import './Stamp.css'
 
 const Stamp = ({type, color})=> {
     return (
-        <div className="type" style={{backgroundColor: color }}> 
+        <div className="type" style={{backgroundColor: color, textTransform: "uppercase" }}> 
             {type} 
         </div>
     );
