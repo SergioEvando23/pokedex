@@ -17,7 +17,7 @@ const PokemonCard = ({nome, url}) => {
             setPokemon(data) 
         })
     
-    }, [])
+    }, [url])
 
     const defineColor = type => {   
         const colorTypes = {

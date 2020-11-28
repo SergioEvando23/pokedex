@@ -8,12 +8,21 @@ import Button from '@material-ui/core/Button'
 
 const ListScreen = () => {
     const [ pokemonLists, setPokemonLists ] = useState({});
-           console.log(pokemonLists)
+    const [ url, setUrl ] = useState("pokemon");
+
     useEffect(( ) => {
-        axios.get("pokemon").then(({data}) => {
+        axios.get(url).then(({data}) => {
             setPokemonLists(data)
         })
-    }, [])
+    }, [url])
+
+    const onProximo = () => {
+        setUrl(pokemonLists?.next)
+    }
+
+    const onAnterior = () => {
+        setUrl(pokemonLists?.previous)
+    }
 
     const cards = pokemonLists?.results?.map( (  item, index ) => {
         const cloneUrl = item?.url;
@@ -30,14 +39,16 @@ const ListScreen = () => {
     });
 
     return (  
-        <div>  
-            <div className="ListScreen"> 
+        <div className="list-screen">  
+            <div className="list-screen__container-cards" > 
                {cards}
-                <div className="Next_button"> 
-                  <Button variant="outlined" color="secondary" style={{color:"#ffffff", margin: "0em 0em 0em 80em"}}> proximo </Button>
+            </div>
+            <div className="list-screen__footer">
+                <div className="list-screen__footer__back-button">
+                    { pokemonLists?.previous !== null && <Button onClick={onAnterior} variant="outlined" color="secondary" > anterior </Button>}
                 </div>
-                <div className="Back_button">
-                <Button variant="outlined" color="secondary" style={{color:"#ffffff", margin: "-4em 80em 0em 0em"}}> anterior </Button>
+                <div className="list-screen__footer__next-button"> 
+                    { pokemonLists?.next !== null && <Button onClick={onProximo} variant="outlined" color="secondary" > proximo </Button>}
                 </div>
             </div>
         </div>
