@@ -26,7 +26,6 @@ const App = () => {
             <b> <Button size="small"  color="secundary">Modo Escuro</Button></b>
           </div>
         </div>
-
         <Switch>
           <Route exact path="/" component={ListScreen}/>
           <Route exact path="/pokemon/:id" component={DetailScreen}/> 

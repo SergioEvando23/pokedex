@@ -1,0 +1,9 @@
+https://pokeapi.co/api/v2/pokemon-species/?offset=20&limit=20
+
+preciso achar o local onde eu defino que sao os 20 primeiro pokemons no Card
+
+criar o botão "proximo"
+
+definir a margem de que ao clicar no botão "proximo" eu avance 20 numeros na listagem do Card
+
+e testar 
